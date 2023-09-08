@@ -1,6 +1,6 @@
 module c_All (
      input [7:0] io_in,
-     output [5:0] io_out
+     output [7:0] io_out
 );
 
 wire [1:0] tnet_0 = io_in[7:6]; //input
