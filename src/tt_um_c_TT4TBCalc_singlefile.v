@@ -1,6 +1,6 @@
 module tt_um_c_All (
      input [7:0] io_in,
-     output [7:0] io_out,
+     output [5:0] io_out,
      input  wire [7:0] ui_in,
      output wire [7:0] uo_out,
      input  wire [7:0] uio_in,
