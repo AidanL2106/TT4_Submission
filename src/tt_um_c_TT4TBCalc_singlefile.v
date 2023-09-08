@@ -1,4 +1,4 @@
-module c_All #( parameter MAX_COUNT = 10_000_000 ) (
+module tt_um_c_All #( parameter MAX_COUNT = 10_000_000 ) (
      input  wire [7:0] ui_in,
      output wire [7:0] uo_out,
      input  wire [7:0] uio_in,
