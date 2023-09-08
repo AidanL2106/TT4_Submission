@@ -22,7 +22,7 @@ yaml_version: 4
 documentation: 
   author:       "Aidan Lefort"      # Your name
   title:        "Ternary to Binary Calculator"      # Project title
-  language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
+  language:     "mixed radix circuit synthesizer (MRCS)" # other examples include Verilog, Amaranth, VHDL, etc
   description:  "A binary encoded ternary calculator that outputs its data as binary"      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
