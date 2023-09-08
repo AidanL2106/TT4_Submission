@@ -35,22 +35,22 @@ documentation:
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - none
-    - none
-    - none
-    - none
+    - 2nd digit of first number.
+    - 1st digit of first number.
+    - 2nd digit of second number.
+    - 1st digit of second number.
     - none
     - none
     - none
     - none
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
-    - segment a
-    - segment b
-    - segment c
-    - segment d
-    - segment e
-    - segment f
+    - 6th digit of output number
+    - 5th digit of output numbe
+    - 4th digit of output numbe
+    - 3rd digit of output numbe
+    - 2nd digit of output numbe
+    - 1st digit of output numbe
     - segment g
     - dot
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
