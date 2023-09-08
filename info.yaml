@@ -5,10 +5,9 @@ project:
 
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
-#  source_files:        
-#    - counter.v
-#    - decoder.v
-#  top_module:  "tt_um_example"      # Put the name of your top module here, must start with "tt_um_". Make it unique by including your github username
+  source_files:        
+    - tt_um_c_TT4TBCalc_singlefile.v
+  top_module:  "tt_um_c_TT4TBCalc_singlefile.v"      # Put the name of your top module here, must start with "tt_um_". Make it unique by including your github username
 
 # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"    # Valid values: 1x1, 1x2, 2x2, 4x2 or 8x2
@@ -21,18 +20,18 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       ""      # Your name
-  title:        ""      # Project title
-  language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  ""      # Short description of what your project does
+  author:       "Aidan Lefort"      # Your name
+  title:        "Ternary to Binary Calculator"      # Project title
+  language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
+  description:  "A binary-encoded-ternary calculator that outputs its data as binary"      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      Explain how your project works
+      This project takes 4 balanced ternary inputs, -1,0,1, and runs them through a ternary calculator using 3x3 logic tables. By including a negative numebr in one of the first two inputs, you change the calculator's function from addition to subtraction. The calculator will output a number up to 4 trits, and then run this data through a simple ternary to binary translator. Admittedly, it is not perfect, but for most outputs of the calculator it will convert each trit into its binary counterpart and add the results together. The complication comes in teh form of binary's lack of a negative number, making subraction difficult. This feature can be tweaked in the MRCS simulation.
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      Explain how to test your project
+      This project can be tested with the MRCS software available through the Ternary Research Group. On their software, there is a "Verify Component" option which allows the user to select their component and test the inputs and outputs of it. Using the interface, one may also choose to input their own data to test the outputs of.
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
@@ -66,9 +65,9 @@ documentation:
     - none
 
 # The following fields are optional
-  tag:          ""      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
-  external_hw:  ""      # Describe any external hardware needed
-  discord:      ""      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
+  tag:          "Calculator, Balanced Ternary, Balanced Ternary to Binary Translator"      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
+  external_hw:  "None"      # Describe any external hardware needed
+  discord:      "saltybuckets2106#"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     0       # Clock frequency in Hz (if required)
-  picture:      ""      # relative path to a picture in your repository (must be 512kb or less)
+  picture:      "tt4tbcalc.png"      # relative path to a picture in your repository (must be 512kb or less)
