@@ -775,7 +775,7 @@ f_20K LogicGate_1 (
 
 endmodule
 
-module c_TT3-BTCalculator (
+module c_TT3_BTCalculator (
      input [7:0] io_in,
      output [7:0] io_out
 );
@@ -845,7 +845,7 @@ assign io_out[5:4] = tnet_5; //DataOut
 assign io_out[3:2] = tnet_6; //DataOut
 assign io_out[1:0] = tnet_7; //DataOut
 
-c_TT3-BTCalculator SavedGate_0 (
+c_TT3_BTCalculator SavedGate_0 (
 .io_in({tnet_0,tnet_1,tnet_2,tnet_3}),
 .io_out({tnet_4,tnet_5,tnet_6,tnet_7})
 );
