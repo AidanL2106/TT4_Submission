@@ -1,4 +1,4 @@
-module c_All (
+module tt_um_c_All (
      input [7:0] io_in,
      output [5:0] io_out
 );
