@@ -1,4 +1,4 @@
-module c_TT4TBCalc (
+module tt_um_c_TT4TBCalc (
      input [7:0] io_in,
      output [5:0] io_out
 );
