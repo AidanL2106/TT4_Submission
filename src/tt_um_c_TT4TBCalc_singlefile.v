@@ -1,7 +1,9 @@
 module tt_um_c_All (
      input [7:0] io_in,
      output [7:0] io_out,
-     input wire clk
+     input wire ena,
+     input wire clk,
+     input wire rst_n
 );
 
 wire [1:0] tnet_0 = io_in[7:6]; //input
