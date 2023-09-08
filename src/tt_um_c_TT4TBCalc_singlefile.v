@@ -31,7 +31,7 @@ c_BCONVERT SavedGate_0 (
 .io_out({bnet_8,bnet_9,bnet_10,bnet_11,bnet_12,bnet_13})
 );
 
-c_TT3-BTCalculator SavedGate_1 (
+c_TT3_BTCalculator SavedGate_1 (
 .io_in({tnet_0,tnet_1,tnet_2,tnet_3}),
 .io_out({tnet_7,tnet_6,tnet_5,tnet_4})
 );
@@ -775,7 +775,7 @@ f_20K LogicGate_1 (
 
 endmodule
 
-module c_TT3-BTCalculator (
+module c_TT3_BTCalculator (
      input [7:0] io_in,
      output [7:0] io_out
 );
