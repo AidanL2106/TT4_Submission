@@ -1,12 +1,6 @@
-module tt_um_c_All #( parameter MAX_COUNT = 10_000_000 ) (
-     input  wire [7:0] ui_in,
-     output wire [7:0] uo_out,
-     input  wire [7:0] uio_in,
-     output wire [7:0] uio_out,
-     output wire [7:0] uio_oe,
-     input  wire       ena,    
-     input  wire       clk,
-     input  wire       rst_n
+module tt_um_c_All (
+     input [7:0] io_in,
+     output [5:0] io_out
 );
 
 wire [1:0] tnet_0 = io_in[7:6]; //input
